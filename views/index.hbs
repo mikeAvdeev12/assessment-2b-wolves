@@ -1,0 +1,26 @@
+<main role="main">
+    {{#if Auth}}
+    {{#each partyShow}}
+ <div class="entry">
+    <h2 class="singer"><a href="events/{{this.id}}">{{this.name}}</a></h2>
+    <span class="song-title">{{this.location}}</span><br>
+    <span class="song-title">{{this.starts}}</span><br>
+    <span class="song-title">{{this.host}}</span>
+
+    <ul class="entry-links">
+        <li class="entry-link"><a href="update/{{this.id}}">edit</a></li>
+        <li class="entry-link delete"><a href="events/{{this.id}}" id={{this.id}}>delete</a></li>
+    </ul>
+  </div>
+    {{/each}}
+    {{else}}
+    {{#each partyShow}}
+    
+    <h2 class="singer"><a href="events/{{this.id}}">{{this.name}}</a></h2>
+    <span class="song-title">{{this.location}}</span><br>
+    <span class="song-title">{{this.starts}}</span><br>
+      <span class="song-title">{{this.host}}</span>
+    {{/each}}
+    {{/if}}
+</main>
+<script src="/js/delete.js"></script>

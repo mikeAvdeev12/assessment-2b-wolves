@@ -1,0 +1,22 @@
+</form>
+
+<form class="form-inline flex-column" action="/update/{{party.id}}" method="POST">
+  <div class="singup bd-highlight mb-5"> </div>
+  <label class="sr-only" for="inlineFormInputName2"></label>
+  <input type="text" name="name" class="form-control mb-2 mr-sm-2" id="inlineFormInputName5" value="{{party.name}}" placeholder="Name"
+    required>
+
+  <label class="sr-only" for="inlineFormInputName2"></label>
+  <input type="text" name="location" class="form-control mb-2 mr-sm-2" id="inlineFormInputName6"  value="{{party.location}}" placeholder="Location"
+    required>
+
+  <label class="sr-only" for="inlineFormInputGroupUsername2"></label>
+  <div class="input-group mb-5 mr-sm-2">
+    <input type="date" name="starts" class="form-control" id="inlineFormInputGroupUsername3" value="{{party.starts}}" placeholder="Starts at"
+      required>
+  </div>
+
+  <button type="submit" class="btn btn-danger mb-2 ">ediT</button>
+  </div>
+  <span class="status-text" name="status-text"></span>
+</form>
